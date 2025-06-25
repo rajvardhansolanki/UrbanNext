@@ -71,7 +71,12 @@
     }
 
     .hero-left-bar h1 {
-        font-size: 40px;
+        font-size: 49px;
+    }
+
+    .hero-left-bar p {
+        line-height: 23px;
+        font-size: 16px;
     }
 
     .product-cards {
@@ -145,10 +150,10 @@
     }
 
     .hero-left-bar {
-        padding: 22px 0px 49px 0px;
+        padding: 0px 0px 20px 0px;
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 15px;
     }
 }
 
@@ -201,6 +206,13 @@
 
     .card:hover .overlay {
         transform: translateY(110px);
+    }
+
+    .hero-left-bar {
+        padding: 0px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
