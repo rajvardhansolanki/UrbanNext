@@ -143,6 +143,13 @@
     .image-content {
         width: 354px;
     }
+
+    .hero-left-bar {
+        padding: 22px 0px 49px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
