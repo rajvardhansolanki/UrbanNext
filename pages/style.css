@@ -415,7 +415,7 @@ button {
     padding: 3rem 0rem;
     flex-wrap: wrap;
     align-items: center;
-    gap: 50px;
+    gap: 24px;
 }
 
 .image-content {

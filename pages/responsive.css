@@ -219,6 +219,11 @@
 @media only screen and (min-width: 768px) {
     .main-hero-section {
         padding-inline: 25px;
+        height: 100%;
+    }
+
+    .hero-section {
+        padding: 80px 0px;
     }
 
     .links ul li {
@@ -260,6 +265,11 @@
 @media only screen and (min-width: 992px) {
     .main-hero-section {
         padding-inline: 56px;
+        height: 100%;
+    }
+
+    .hero-section {
+        padding: 80px 0px;
     }
 
     .links ul li {
@@ -300,6 +310,11 @@
 @media only screen and (min-width: 1200px) {
     .main-hero-section {
         padding-inline: 145px;
+        height: 100%;
+    }
+
+    .hero-section {
+        padding: 80px 0px;
     }
 
     .links ul li {
