@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Images/Icons/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>UrbanNest</title>
+</head>
+
+<body>
+    <div class="main-hero-section">
+        <div class="nav-bar">
+            <div class="brand-text">
+                <a href="">UrbanNest.</a>
+            </div>
+            <div class="bars">
+                <button class="drawer-btn" onclick="onShowDrawer()">
+                    <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                    </svg>
+                </button>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="#">
+                        <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 
+            20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 
+            21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="nav-svg" xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24"
+                            stroke-width="1.5" stroke="#fff" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-section">
+            <div class="hero-left-bar">
+                <h1>Modern Interior Design Studio</h1>
+                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
+                    imperdiet dolor tempor tristique.</p>
+                <div class="btn-container">
+                    <button class="shop-btn">Shop Now</button>
+                    <button class="explore-btn">Explore</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="../assets/Images/pngs/couch.png" alt="couch">
+            </div>
+        </div>
+    </div>
+    <div class="products-title">
+        <h1>Products</h1>
+    </div>
+    <div class="product-cards">
+        <div class="card">
+            <img src="../assets/Images/pngs/product-1.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$50.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-2.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Kruzo Aero Chair</h3>
+                <p>$78.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-3.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$$43.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-1.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$50.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-1.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$50.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-2.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Kruzo Aero Chair</h3>
+                <p>$78.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-3.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$$43.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card">
+            <img src="../assets/Images/pngs/product-1.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$50.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="choose-section">
+        <div class="choose-left">
+            <div class="choose-text">
+                <h1>Why Choose Us</h1>
+                <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
+                    imperdiet dolor tempor tristique.
+                </p>
+                <div class="feature-box">
+                    <div class="feature">
+                        <div class="feature-svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="black" width="30px">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <strong>Fast & Free Shipping</strong>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="black" width="30px">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <strong>Fast & Free Shipping</strong>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="black" width="30px">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <strong>Fast & Free Shipping</strong>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="black" width="30px">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                            </svg>
+                        </div>
+                        <strong>Fast & Free Shipping</strong>
+                        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="choose-right">
+            <img src="../assets/Images/pngs/why-choose-us-img.jpg" alt="why-choose-us">
+        </div>
+    </div>
+    <div class="popular-products">
+        <div class="popular-product">
+            <div class="popular-product-img">
+                <img src="../assets/Images/pngs/popular-product-1.png" alt="popular-product">
+            </div>
+            <div class="popular-product-content">
+                <h3>Nordic Chair</h3>
+                <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+                <p>Read more</p>
+            </div>
+        </div>
+        <div class="popular-product">
+            <div class="popular-product-img">
+                <img src="../assets/Images/pngs/popular-product-2.png" alt="popular-product">
+            </div>
+            <div class="popular-product-content">
+                <h3>Nordic Chair</h3>
+                <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+                <p>Read more</p>
+            </div>
+        </div>
+        <div class="popular-product">
+            <div class="popular-product-img">
+                <img src="../assets/Images/pngs/popular-product-3.png" alt="popular-product">
+            </div>
+            <div class="popular-product-content">
+                <h3>Nordic Chair</h3>
+                <p>Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio </p>
+                <p>Read more</p>
+            </div>
+        </div>
+    </div>
+    <div class="slider-container">
+        <h1>Testimonials</h1>
+        <div class="slider">
+            <div class="slider-content">
+                <img src="../assets/Images/pngs/person-1.png" alt="person-image">
+                <h3>Maria Jones</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>CEO, Co-Founder, XYZ Inc.</p>
+                <p>“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam
+                    ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+                    morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat
+                    dui quis scelerisque.”
+                </p>
+            </div>
+            <div class="slider-content">
+                <img src="../assets/Images/pngs/person-1.png" alt="person-image">
+                <h3>Maria Jones</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>CEO, Co-Founder, XYZ Inc.</p>
+                <p>“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam
+                    ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+                    morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat
+                    dui quis scelerisque.”
+                </p>
+            </div>
+            <div class="slider-content">
+                <img src="../assets/Images/pngs/person-1.png" alt="person-image">
+                <h3>Maria Jones</h3>
+                <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <p>CEO, Co-Founder, XYZ Inc.</p>
+                <p>“Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam
+                    ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant
+                    morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat
+                    dui quis scelerisque.”
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="recent-blogs">
+        <div class="recent-content">
+            <h1>Recent Blog</h1>
+            <p>View All Posts</p>
+        </div>
+        <div class="recent-images">
+            <div class="image-content">
+                <div class="image-container">
+                    <img src="../assets/Images/pngs/post-1.jpg" alt="post-image">
+                </div>
+                <p>First Time Home Owner Ideas
+                    by Kristin Watson on Dec 19, 2021
+                </p>
+            </div>
+            <div class="image-content">
+                <div class="image-container">
+                    <img src="../assets/Images/pngs/post-2.jpg" alt="post-image">
+                </div>
+                <p>First Time Home Owner Ideas
+                    by Kristin Watson on Dec 19, 2021
+                </p>
+            </div>
+            <div class="image-content">
+                <div class="image-container">
+                    <img src="../assets/Images/pngs/post-3.jpg" alt="post-image">
+                </div>
+                <p>First Time Home Owner Ideas
+                    by Kristin Watson on Dec 19, 2021
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>This Is Footer</h3>
+    </footer>
+
+    <!-- jQuery (Required by Slick) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 3000,
+            });
+        });
+    </script>
+
+
+    <script>
+        const onShowDrawer = () => {
+            const box = document.querySelector(".links");
+            box.classList.toggle("active");
+        };
+        const cartAdded = () => {
+            window.alert("Product added to cart");
+        };
+    </script>
+
+</body>
+
+</html>
