@@ -1,7 +1,6 @@
 @media only screen and (max-width: 600px) {
     .main-hero-section {
         padding-inline: 20px;
-        height: 100vh;
     }
 
     .links {
@@ -141,14 +140,17 @@
     }
 
     .product-cards {
-        padding: 7rem 1rem;
+        padding: 0rem 1rem;
+    }
+
+    .buy-btn {
+        visibility: visible;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .main-hero-section {
         padding-inline: 20px;
-        height: 100vh;
     }
 
     .links ul li {
@@ -180,7 +182,7 @@
         padding: 0px 0px 20px 0px;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 28px;
     }
 
     .products-title {
@@ -195,7 +197,6 @@
 @media only screen and (min-width: 768px) {
     .main-hero-section {
         padding-inline: 25px;
-        height: 100%;
     }
 
     .hero-section {
@@ -245,7 +246,6 @@
 @media only screen and (min-width: 992px) {
     .main-hero-section {
         padding-inline: 56px;
-        height: 100%;
     }
 
     .hero-section {
@@ -294,7 +294,6 @@
 @media only screen and (min-width: 1200px) {
     .main-hero-section {
         padding-inline: 145px;
-        height: 100%;
     }
 
     .hero-section {
