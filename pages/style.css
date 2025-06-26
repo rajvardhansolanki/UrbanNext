@@ -156,21 +156,25 @@
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
-    padding: 7rem 135px;
+    padding: 7rem 9rem;
 }
 
 .card {
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 15px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    position: relative;
+    flex-grow: 1;
+    flex-basis: 255px;
+    min-width: 255px;
+    min-height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card img {
@@ -222,8 +226,9 @@
     background-color: #0a58ca;
     opacity: 12%;
     position: absolute;
-    transform: translateY(290px);
+    bottom: -200px;
     z-index: 0;
+    transition: bottom 0.5s ease, opacity 0.3s ease;
 }
 
 button {
@@ -231,7 +236,7 @@ button {
 }
 
 .card:hover .overlay {
-    transform: translateY(80px);
+    bottom: -10px;
     visibility: visible;
 }
 

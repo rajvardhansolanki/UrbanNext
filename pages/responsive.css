@@ -79,22 +79,6 @@
         font-size: 16px;
     }
 
-    .product-cards {
-        padding: 3rem 0rem;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-    .overlay {
-        transform: translateY(308px);
-    }
-
-    .card:hover .overlay {
-        transform: translateY(110px);
-    }
-
     .products-title {
         background-color: #eff2f1;
         padding: 2rem 1rem;
@@ -155,6 +139,10 @@
         flex-direction: column;
         gap: 15px;
     }
+
+    .product-cards {
+        padding: 7rem 1rem;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -188,31 +176,19 @@
         width: 370px;
     }
 
-    .product-cards {
-        padding: 2rem 0rem;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-    .card {
-        width: 300px;
-    }
-
-    .overlay {
-        transform: translateY(308px);
-    }
-
-    .card:hover .overlay {
-        transform: translateY(110px);
-    }
-
     .hero-left-bar {
         padding: 0px 0px 20px 0px;
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+
+    .products-title {
+        padding: 2rem 1rem;
+    }
+
+    .product-cards {
+        padding: 1rem 1rem;
     }
 }
 
@@ -260,6 +236,10 @@
         padding-inline: 135px 20px;
         width: 70%;
     }
+
+    .product-cards {
+        padding: 1rem 2rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -305,6 +285,10 @@
     .choose-section {
         flex-wrap: nowrap;
     }
+
+    .product-cards {
+        padding: 1rem 4rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -343,10 +327,6 @@
         width: 500px;
     }
 
-    .product-cards {
-        padding: 1rem 0rem;
-    }
-
     .products-title {
         background-color: #eff2f1;
         padding: 2rem 9rem;
@@ -359,5 +339,9 @@
     .choose-left {
         padding-inline: 135px 20px;
         width: 70%;
+    }
+
+    .product-cards {
+        padding: 1rem 9rem;
     }
 }
