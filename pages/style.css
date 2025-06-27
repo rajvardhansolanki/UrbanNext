@@ -66,10 +66,10 @@
     content: '';
     position: absolute;
     width: 0%;
-    height: 2px;
-    bottom: -3px;
+    height: 4px;
+    bottom: -6px;
     left: 0;
-    background-color: #3b5d50;
+    background-color: #f9bf29;
     transition: width 0.4s ease;
 }
 
@@ -147,7 +147,7 @@
 
 .shake-horizontal {
     -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 @-webkit-keyframes shake-horizontal {
@@ -313,31 +313,6 @@ button {
 .card:hover .overlay {
     bottom: -10px;
     visibility: visible;
-}
-
-.choose-section {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2rem 0em;
-    background-color: #eff2f1;
-}
-
-.choose-left {
-    padding-inline: 135px 20px;
-}
-
-.choose-right img {
-    width: 100%;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-
-.choose-text {
-    padding: 5rem 0rem 5rem 0rem;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
 }
 
 .feature-box {

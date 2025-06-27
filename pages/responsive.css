@@ -83,19 +83,6 @@
         padding: 2rem 1rem;
     }
 
-    .choose-left {
-        padding-inline: 1rem 1rem;
-    }
-
-    .choose-section {
-        gap: 32px;
-    }
-
-    .choose-text {
-        padding: 1rem 0rem 1rem 0rem;
-        gap: 18px;
-    }
-
     .feature-box {
         gap: 22px;
     }
@@ -282,10 +269,6 @@
         padding: 2rem 4rem;
     }
 
-    .choose-section {
-        flex-wrap: nowrap;
-    }
-
     .product-cards {
         padding: 1rem 4rem;
     }
@@ -329,10 +312,6 @@
     .products-title {
         background-color: #eff2f1;
         padding: 2rem 9rem;
-    }
-
-    .choose-section {
-        flex-wrap: nowrap;
     }
 
     .choose-left {
