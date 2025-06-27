@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <title>UrbanNest</title>
 </head>
 
@@ -58,7 +60,7 @@
             </div>
         </div>
         <div class="hero-section">
-            <div class="hero-left-bar">
+            <div class="hero-left-bar" data-aos="zoom-in-right">
                 <h1>Modern Interior Design Studio</h1>
                 <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
                     imperdiet dolor tempor tristique nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate
@@ -69,16 +71,16 @@
                     <button class="explore-btn">Explore</button>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-image" data-aos="zoom-in-left">
                 <img src="../assets/Images/pngs/couch.png" alt="couch">
             </div>
         </div>
     </div>
     <div class="products-title">
-        <h1>Products</h1>
+        <h1 data-aos="fade-right">Products</h1>
     </div>
     <div class="product-cards">
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -93,7 +95,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-2.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Kruzo Aero Chair</h3>
@@ -108,7 +110,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-3.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -123,7 +125,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -138,7 +140,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -153,7 +155,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-2.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Kruzo Aero Chair</h3>
@@ -168,7 +170,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-3.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -183,11 +185,26 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
                 <p>$50.00</p>
+                <button class="buy-btn" onclick="cartAdded()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="#2f2f2f">
+                        <path stroke-linecap=" round" stroke-linejoin="round"
+                            d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="card" data-aos="fade-up">
+            <img src="../assets/Images/pngs/product-3.png" alt="product-image">
+            <div class="card-details">
+                <h3 class="product-title">Nordic Chair</h3>
+                <p>$$43.00</p>
                 <button class="buy-btn" onclick="cartAdded()">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="#2f2f2f">
@@ -199,7 +216,7 @@
             <div class="overlay"></div>
         </div>
     </div>
-    <div class="choose-section">
+    <!-- <div class="choose-section">
         <div class="choose-left">
             <div class="choose-text">
                 <h1>Why Choose Us</h1>
@@ -257,8 +274,8 @@
         <div class="choose-right">
             <img src="../assets/Images/pngs/why-choose-us-img.jpg" alt="why-choose-us">
         </div>
-    </div>
-    <div class="popular-products">
+    </div> -->
+    <!-- <div class="popular-products">
         <div class="popular-product">
             <div class="popular-product-img">
                 <img src="../assets/Images/pngs/popular-product-1.png" alt="popular-product">
@@ -377,15 +394,13 @@
                 </p>
             </div>
         </div>
-    </div>
+    </div> -->
     <footer>
         <h3>This Is Footer</h3>
     </footer>
 
-    <!-- jQuery (Required by Slick) -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Slick JS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -410,6 +425,10 @@
         const cartAdded = () => {
             window.alert("Product added to cart");
         };
+    </script>
+
+    <script>
+        AOS.init();
     </script>
 
 </body>
