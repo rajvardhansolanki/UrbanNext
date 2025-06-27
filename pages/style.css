@@ -10,7 +10,7 @@
 .main-hero-section {
     width: 100%;
     background-color: #3b5d50;
-    padding-inline: 135px;
+    padding-inline: 9rem;
 }
 
 .bars {
@@ -220,7 +220,7 @@
 
 .products-title {
     background-color: #eff2f1;
-    padding: 2rem 135px;
+    padding: 2rem 9rem;
 }
 
 .product-cards {
@@ -315,44 +315,79 @@ button {
     visibility: visible;
 }
 
-.feature-box {
+.why-title {
+    background-color: #eff2f1;
+    padding: 2rem 9rem;
+}
+
+.why-section {
+    background-color: #eff2f1;
+    padding: 1rem 9rem 4rem 9rem;
     width: 100%;
     display: flex;
-    gap: 15px;
+}
+
+.why-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.why-left p {
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+
+.why-feature-box {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
 }
 
 .feature {
-    width: 48%;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    flex-wrap: wrap;
-    color: #2f2f2f;
+    width: 50%;
+    height: 200px;
+    padding-right: 10px;
 }
 
 .feature-svg-container {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 40px;
-    background-color: #5aebba7e;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #3b5d5033;
+    padding: 9px;
 }
 
-.feature p {
-    font-size: 13px;
-    color: #2f2f2f;
+.feature-svg-container svg {
+    stroke: #212121;
+    width: 32px;
+}
+
+.feature h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
     font-size: 14px;
-    font-weight: 400;
+    color: #212121;
 }
 
-.feature strong {
-    color: #2f2f2f;
-    font-size: 14px;
+.why-right {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    border-top-left-radius: 30px;
 }
 
-.feature p {
-    color: #6a6a6a;
+.why-right img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .popular-products {
