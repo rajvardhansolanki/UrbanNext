@@ -85,6 +85,7 @@
 
     .popular-product {
         margin: 20px 0px 20px 0px;
+        width: 100%;
     }
 
     .slider-container {
@@ -167,6 +168,12 @@
         width: 100%;
         padding: 1.5rem 0rem 1rem 0rem;
         gap: 10px;
+    }
+
+    .popular-products {
+        padding: 1rem 1rem 1rem 1rem;
+        width: 100%;
+        justify-content: start;
     }
 }
 
@@ -255,6 +262,11 @@
     .why-right {
         display: none;
     }
+
+    .popular-products {
+        padding: 1rem 1rem 1rem 1rem;
+        justify-content: start;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -306,6 +318,10 @@
 
     .why-section {
         padding: 1rem 4rem;
+    }
+
+    .popular-products {
+        padding: 1rem 1rem 1rem 1rem;
     }
 }
 
@@ -382,6 +398,15 @@
     .help-right {
         width: 48%;
     }
+
+    .popular-products {
+        padding: 3rem 9rem 3rem 9rem;
+    }
+
+    .popular-product {
+        width: 293px;
+        margin: 0px 28px 0px 28px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -436,5 +461,10 @@
     .why-section {
         width: 100%;
         padding: 1rem 9rem;
+    }
+
+    .popular-product {
+        width: 293px;
+        margin: 0px 28px 0px 28px;
     }
 }
