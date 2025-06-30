@@ -119,6 +119,11 @@
 
     .product-cards {
         padding: 0rem 1rem;
+        justify-content: start;
+    }
+
+    .card {
+        max-width: 300px;
     }
 
     .buy-btn {
