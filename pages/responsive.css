@@ -363,7 +363,7 @@
 
     .why-section {
         width: 100%;
-        padding: 1rem 9rem;
+        padding: 1rem 4rem;
     }
 
     .why-right {
@@ -431,5 +431,10 @@
     .why-title {
         background-color: #eff2f1;
         padding: 2rem 9rem;
+    }
+
+    .why-section {
+        width: 100%;
+        padding: 1rem 9rem;
     }
 }
