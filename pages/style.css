@@ -527,6 +527,90 @@ button {
     color: #2f2f2f8a;
 }
 
+.we-help-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 9rem 4rem 9rem;
+}
+
+.help-left {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.help-right {
+    width: 50%;
+    padding-inline: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.help-right-title {
+    color: #2f2f2f;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.help-right-para {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    color: #6a6a6a;
+    font-size: 14px;
+}
+
+.help-left-container {
+    width: 50%;
+    background-color: #f9bf29;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.help-left-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.help-right-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.help-right-top-childs {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.help-right-bottom-childs {
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.help-right-top-childs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.help-right-bottom-childs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 footer {
     width: 100%;
     height: 40px;
