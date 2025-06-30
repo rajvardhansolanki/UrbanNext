@@ -198,6 +198,10 @@
         padding: 1rem 1rem;
     }
 
+    .card {
+        max-width: 300px;
+    }
+
     .why-title {
         padding: 1rem 1rem;
     }
