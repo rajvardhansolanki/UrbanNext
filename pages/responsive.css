@@ -88,12 +88,12 @@
         width: 100%;
     }
 
-    .slider-container {
-        display: none;
-    }
-
     .recent-blogs {
         padding: 1rem 1rem;
+    }
+
+    .slider {
+        padding: 2rem 1rem;
     }
 
     .recent-content {
