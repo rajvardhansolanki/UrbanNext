@@ -500,6 +500,7 @@ button {
 
 .recent-images {
     width: 100%;
+    height: auto;
     display: flex;
     padding: 3rem 0rem;
     flex-wrap: wrap;
@@ -518,6 +519,11 @@ button {
 .image-container img {
     width: 100%;
     border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.2);
 }
 
 .image-content p {
