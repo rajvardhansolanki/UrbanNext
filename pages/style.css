@@ -438,6 +438,7 @@ button {
     flex-direction: column;
     align-items: center;
     background-color: #eff2f1;
+    margin-top: 2rem;
 }
 
 .slider-container h1 {
@@ -477,13 +478,14 @@ button {
 
 .recent-blogs {
     width: 100%;
-    padding: 7rem 9rem;
+    padding: 4rem 9rem;
 }
 
 .recent-content {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .recent-content h1 {
@@ -496,40 +498,6 @@ button {
     font-weight: 500;
     color: #2f2f2f8a;
     text-decoration: underline;
-}
-
-.recent-images {
-    width: 100%;
-    height: auto;
-    display: flex;
-    padding: 3rem 0rem;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 24px;
-}
-
-.image-content {
-    width: 313px;
-    height: 185px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.image-container img {
-    width: 100%;
-    border-radius: 16px;
-    transition: transform 0.3s ease;
-}
-
-.image-container img:hover {
-    transform: scale(1.2);
-}
-
-.image-content p {
-    font-size: 15px;
-    font-weight: 500;
-    color: #2f2f2f8a;
 }
 
 .we-help-section {
@@ -673,4 +641,136 @@ footer {
 
 .marquee-container {
     display: flex;
+}
+
+.blog-container {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 36px 0px;
+}
+
+.blog-container .blog-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 312px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    color: #212121;
+    border-radius: 20px;
+    transition: transform 0.3s ease, height 0.5s ease;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.blog-container .blog-card:hover {
+    height: 354px;
+}
+
+.blog-container .blog-card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: top 0.5s ease, scale 0.5s ease, box-shadow 0.5s ease;
+}
+
+.blog-container .blog-card:hover .img-box {
+    top: -78px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.blog-container .blog-card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-container .blog-card .blog-content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 24px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: top 0.5s ease, height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-container .blog-card:hover .blog-content {
+    top: 130px;
+    height: 380px;
+}
+
+.blog-container .blog-card .blog-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #212121;
+}
+
+.blog-container .blog-card .blog-content p,
+.blog-container .blog-card .blog-content a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+    /* Prevent interaction when hidden */
+}
+
+.blog-container .blog-card:hover .blog-content p,
+.blog-container .blog-card:hover .blog-content a {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.blog-container .blog-card .blog-content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: #212121;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.blog-container .blog-card .blog-content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .blog-container .blog-card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .blog-container .blog-card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .blog-container .blog-card .blog-content p {
+        font-size: 0.8rem;
+    }
+
+    .blog-container .blog-card .blog-content a {
+        font-size: 0.9rem;
+    }
 }
