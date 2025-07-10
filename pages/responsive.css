@@ -295,6 +295,18 @@
     .footer-child-one {
         padding: 3rem 0rem;
     }
+
+    .blog-container {
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 33px 22px;
+        padding: 36px 0px;
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) {
