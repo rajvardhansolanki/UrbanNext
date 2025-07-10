@@ -178,11 +178,17 @@
 
     .footer-childs {
         width: 100%;
+        margin-top: 1rem;
     }
 
     .footer-child-one {
         padding: 1rem 1rem;
         justify-content: start;
+    }
+
+    .social-icons-container svg {
+        width: 50px;
+        height: auto;
     }
 }
 
