@@ -192,7 +192,8 @@
     }
 
     .blog-container {
-        margin-top: 4rem;
+        margin-top: 0rem;
+        gap: 25px;
     }
 }
 
