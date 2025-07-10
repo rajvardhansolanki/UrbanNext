@@ -175,6 +175,15 @@
         width: 100%;
         justify-content: start;
     }
+
+    .footer-childs {
+        width: 100%;
+    }
+
+    .footer-child-one {
+        padding: 1rem 1rem;
+        justify-content: start;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -267,6 +276,14 @@
         padding: 1rem 1rem 1rem 1rem;
         justify-content: start;
     }
+
+    .footer-childs {
+        width: 20%;
+    }
+
+    .footer-child-one {
+        padding: 3rem 0rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -322,6 +339,14 @@
 
     .popular-products {
         padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .footer-childs {
+        width: 20%;
+    }
+
+    .footer-child-one {
+        padding: 3rem 0rem;
     }
 }
 
@@ -406,6 +431,14 @@
     .popular-product {
         width: 293px;
         margin: 0px 28px 0px 28px;
+    }
+
+    .footer-childs {
+        width: 22%;
+    }
+
+    .footer-child-one {
+        padding: 3rem 0.5rem;
     }
 }
 

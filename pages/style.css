@@ -619,15 +619,13 @@ button {
 footer {
     color: #fff;
     width: 100%;
-    height: 500px;
     background-color: black;
     overflow: hidden;
 }
 
 .footer-child-one {
     width: 100%;
-    height: 328px;
-    padding: 3rem 9rem;
+    padding: 3rem 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
