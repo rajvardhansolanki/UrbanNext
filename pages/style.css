@@ -617,14 +617,63 @@ button {
 }
 
 footer {
+    color: #fff;
     width: 100%;
-    height: 40px;
-    background-color: #212121;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 500px;
+    background-color: black;
+    overflow: hidden;
 }
 
-footer h3 {
-    color: #fff;
+.footer-child-one {
+    width: 100%;
+    height: 328px;
+    padding: 3rem 9rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 28px;
+    row-gap: 20px;
+}
+
+.footer-childs {
+    width: 23%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.footer-childs p {
+    font-size: 15px;
+    color: #C6C6C6;
+    line-height: 24px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.social-icons-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+.social-icons-container svg {
+    width: 42px;
+    height: auto;
+}
+
+.footer-child-two {
+    width: 100%;
+    height: 158px;
+    display: flex;
+    padding: 1rem 9rem;
+}
+
+.country-container {
+    width: 100px;
+}
+
+.marquee-container {
+    display: flex;
 }
