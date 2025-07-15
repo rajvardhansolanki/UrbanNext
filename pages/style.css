@@ -791,7 +791,7 @@ footer {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(145deg, #ff6b6b, #ee5a24);
+    background: linear-gradient(145deg, #3b5d50, #44a08d);
     transform-style: preserve-3d;
 }
 
@@ -840,7 +840,7 @@ footer {
     min-width: 255px;
     max-width: 100%;
     min-height: 350px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #3b5d50;
     backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -849,7 +849,7 @@ footer {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(145deg, #4ecdc4, #44a08d);
+    background: linear-gradient(145deg, #3b5d50, #44a08d);
 }
 
 .premium-container::after {
@@ -892,7 +892,7 @@ footer {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(145deg, #a8edea, #fed6e3);
+    background: linear-gradient(145deg, #3b5d50, #44a08d);
 }
 
 .lightning-container::before {
