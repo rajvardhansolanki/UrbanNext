@@ -957,14 +957,14 @@
         }
 
         function scrollToTop() {
-            smoothScrollTo(0, 2000); // Slower scroll up
+            smoothScrollTo(0, 7000); // Slower scroll up
         }
 
         function scrollToBottom() {
             const documentHeight = document.documentElement.scrollHeight;
             const windowHeight = window.innerHeight;
             const maxScroll = documentHeight - windowHeight;
-            smoothScrollTo(maxScroll, 6000); // Slower scroll down
+            smoothScrollTo(maxScroll, 7000); // Slower scroll down
         }
 
         function toggleScrollButtons() {
