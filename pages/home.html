@@ -80,7 +80,7 @@
         <h1 data-aos="fade-right">Products</h1>
     </div>
     <div class="product-cards">
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -95,7 +95,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-2.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Kruzo Aero Chair</h3>
@@ -110,7 +110,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-3.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -125,7 +125,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -140,7 +140,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -155,7 +155,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-2.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Kruzo Aero Chair</h3>
@@ -170,7 +170,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-3.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -185,7 +185,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-1.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -200,7 +200,7 @@
             </div>
             <div class="overlay"></div>
         </div>
-        <div class="card" data-aos="fade-up">
+        <div class="card">
             <img src="../assets/Images/pngs/product-3.png" alt="product-image">
             <div class="card-details">
                 <h3 class="product-title">Nordic Chair</h3>
@@ -813,7 +813,13 @@
             </div>
         </marquee>
     </footer>
+    <button class="scroll-button scroll-top" id="scrollTopBtn" title="Scroll to Top">
+        ↑
+    </button>
 
+    <button class="scroll-button scroll-down" id="scrollDownBtn" title="Scroll to Bottom">
+        ↓
+    </button>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -918,6 +924,85 @@
 
         createFloatingParticles();
     </script>
+
+    <script>
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+        const scrollDownBtn = document.getElementById('scrollDownBtn');
+
+        // Smooth scroll with easing and slower duration
+        function smoothScrollTo(targetY, duration = 2000) {
+            const startY = window.pageYOffset;
+            const difference = targetY - startY;
+            const startTime = performance.now();
+
+            function easeInOutCubic(progress) {
+                return progress < 0.5
+                    ? 4 * progress * progress * progress
+                    : 1 - Math.pow(-2 * progress + 2, 3) / 2;
+            }
+
+            function step(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const easeProgress = easeInOutCubic(progress);
+
+                window.scrollTo(0, startY + difference * easeProgress);
+
+                if (progress < 1) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+            requestAnimationFrame(step);
+        }
+
+        function scrollToTop() {
+            smoothScrollTo(0, 2000); // Slower scroll up
+        }
+
+        function scrollToBottom() {
+            const documentHeight = document.documentElement.scrollHeight;
+            const windowHeight = window.innerHeight;
+            const maxScroll = documentHeight - windowHeight;
+            smoothScrollTo(maxScroll, 6000); // Slower scroll down
+        }
+
+        function toggleScrollButtons() {
+            const scrollY = window.pageYOffset;
+            const documentHeight = document.documentElement.scrollHeight;
+            const windowHeight = window.innerHeight;
+            const maxScroll = documentHeight - windowHeight;
+
+            if (scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+
+            if (scrollY < maxScroll - 300) {
+                scrollDownBtn.classList.add('show');
+            } else {
+                scrollDownBtn.classList.remove('show');
+            }
+        }
+
+        // Event listeners
+        scrollTopBtn.addEventListener('click', scrollToTop);
+        scrollDownBtn.addEventListener('click', scrollToBottom);
+
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(toggleScrollButtons, 10);
+        });
+
+        window.addEventListener('load', toggleScrollButtons);
+        window.addEventListener('resize', toggleScrollButtons);
+
+        // Disable default scroll-behavior so we control it manually
+        document.documentElement.style.scrollBehavior = 'auto';
+    </script>
+
 
 </body>
 

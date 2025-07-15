@@ -1011,3 +1011,74 @@ footer {
         height: 350px;
     }
 }
+
+.scroll-button {
+    position: fixed;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+}
+
+.scroll-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-button.show {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.scroll-top {
+    bottom: 30px;
+}
+
+.scroll-down {
+    bottom: 100px;
+}
+
+.scroll-button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-button {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 20px;
+    }
+
+    .scroll-top {
+        bottom: 20px;
+    }
+
+    .scroll-down {
+        bottom: 80px;
+    }
+}
