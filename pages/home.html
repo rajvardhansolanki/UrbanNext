@@ -575,43 +575,30 @@
             <p>View All Posts</p>
         </div>
         <div class="blog-container">
-            <div class="blog-card" style="--clr: #009688">
-                <div class="img-box">
-                    <img src="../assets/Images/pngs/post-1.jpg">
-                </div>
-                <div class="blog-content">
-                    <h2>Nordic Chair</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ad cum libero ratione?
-                        Temporibus ducimus pariatur incidunt, quibusdam deserunt sit!
-                    </p>
-                    <a href="">Read More</a>
+            <div class="innovation-container">
+                <div class="innovation-content">
+                    <div class="rocket-icon">🚀</div>
+                    <h3 class="innovation-title">Innovation</h3>
+                    <p class="innovation-description">Experience cutting-edge technology with our innovative solutions
+                        that transform your digital presence.</p>
                 </div>
             </div>
-            <div class="blog-card" style="--clr: #009688">
-                <div class="img-box">
-                    <img src="../assets/Images/pngs/post-2.jpg">
-                </div>
-                <div class="blog-content">
-                    <h2>Kruzo Aero Chair</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ad cum libero ratione?
-                        Temporibus ducimus pariatur incidunt, quibusdam deserunt sit!
-                    </p>
-                    <a href="">Read More</a>
+
+            <div class="premium-container">
+                <div class="premium-content">
+                    <div class="diamond-icon">💎</div>
+                    <h3 class="premium-title">Premium Quality</h3>
+                    <p class="premium-description">Crafted with precision and attention to detail, delivering excellence
+                        in every aspect of our service.</p>
                 </div>
             </div>
-            <div class="blog-card" style="--clr: #009688">
-                <div class="img-box">
-                    <img src="../assets/Images/pngs/post-3.jpg">
-                </div>
-                <div class="blog-content">
-                    <h2>Donec vitae odio</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ad cum libero ratione?
-                        Temporibus ducimus pariatur incidunt, quibusdam deserunt sit!
-                    </p>
-                    <a href="">Read More</a>
+
+            <div class="lightning-container">
+                <div class="lightning-content">
+                    <div class="bolt-icon">⚡</div>
+                    <h3 class="lightning-title">Lightning Fast</h3>
+                    <p class="lightning-description">Optimized for speed and performance, ensuring smooth and responsive
+                        user experiences.</p>
                 </div>
             </div>
         </div>
@@ -880,6 +867,56 @@
 
     <script>
         AOS.init();
+    </script>
+
+
+    <script>
+        // Add magnetic follow effect to premium card
+        const premiumCard = document.querySelector('.premium-container');
+
+        premiumCard.addEventListener('mousemove', (e) => {
+            const rect = premiumCard.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            const deltaX = (x - centerX) / centerX;
+            const deltaY = (y - centerY) / centerY;
+
+            premiumCard.style.transform = `perspective(1000px) rotateX(${deltaY * -10}deg) rotateY(${deltaX * 10}deg) scale(1.03)`;
+        });
+
+        premiumCard.addEventListener('mouseleave', () => {
+            premiumCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+        });
+
+        // Add floating particles
+        function createFloatingParticles() {
+            const containers = document.querySelectorAll('.innovation-container, .premium-container, .lightning-container');
+
+            containers.forEach(container => {
+                container.addEventListener('mouseenter', () => {
+                    for (let i = 0; i < 5; i++) {
+                        setTimeout(() => {
+                            const particle = document.createElement('div');
+                            particle.className = 'floating-particle';
+                            particle.style.left = Math.random() * 100 + '%';
+                            particle.style.top = Math.random() * 100 + '%';
+                            particle.style.animationDelay = Math.random() * 2 + 's';
+                            container.appendChild(particle);
+
+                            setTimeout(() => {
+                                particle.remove();
+                            }, 3000);
+                        }, i * 100);
+                    }
+                });
+            });
+        }
+
+        createFloatingParticles();
     </script>
 
 </body>
