@@ -242,9 +242,9 @@
         padding: 1rem 1rem;
     }
 
-    .card {
+    /* .card {
         max-width: 400px
-    }
+    } */
 
     .why-title {
         padding: 1rem 1rem;
@@ -353,11 +353,11 @@
     }
 
     .why-title {
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 
     .why-section {
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
     }
 
     .popular-products {
@@ -370,6 +370,74 @@
 
     .footer-child-one {
         padding: 3rem 0rem;
+    }
+
+    .we-help-section {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+    }
+
+    .slick-slider {
+        padding: 1rem 2rem;
+    }
+
+    .recent-blogs {
+        padding: 2rem 2rem;
+    }
+
+    .card {
+        flex-basis: 222px;
+        max-width: 255px;
+        min-width: 216px;
+        min-height: 100px;
+    }
+
+    .card img {
+        max-width: 70%;
+    }
+
+    .innovation-container {
+        flex-basis: 222px;
+        max-width: 255px;
+        min-width: 216px;
+        max-height: 296px;
+        min-height: 100px;
+        padding: 1rem 0.5rem;
+    }
+
+    .premium-container {
+        flex-basis: 222px;
+        max-width: 255px;
+        min-width: 216px;
+        max-height: 296px;
+        min-height: 100px;
+        padding: 1rem 0.5rem;
+    }
+
+    .lightning-container {
+        flex-basis: 222px;
+        max-width: 255px;
+        min-width: 216px;
+        max-height: 296px;
+        min-height: 100px;
+        padding: 1rem 0.5rem;
+    }
+
+    .blog-container {
+        gap: 10px
+    }
+
+    .innovation-title,
+    .premium-title,
+    .lightning-title {
+        font-size: 1.2rem;
+    }
+
+    .innovation-description,
+    .premium-description,
+    .lightning-description {
+        font-size: 0.8rem;
     }
 }
 
@@ -418,7 +486,7 @@
 
     .we-help-section {
         justify-content: space-between;
-        padding: 1rem 9rem;
+        padding: 1rem 4rem;
     }
 
     .why-title {
@@ -522,5 +590,27 @@
     .popular-product {
         width: 293px;
         margin: 0px 28px 0px 28px;
+    }
+
+    .we-help-section {
+        padding: 1rem 9rem;
+    }
+
+    .slick-slider {
+        padding: 1rem 9rem;
+    }
+
+    .recent-blogs {
+        padding: 2rem 9rem;
+    }
+
+    .innovation-container,
+    .premium-container,
+    .lightning-container {
+        max-width: 100%;
+        min-height: 266px;
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem;
     }
 }
