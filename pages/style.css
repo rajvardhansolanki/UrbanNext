@@ -1101,13 +1101,22 @@ footer {
     }
 }
 
+.client-title-container {
+    padding: 2rem 9rem 0rem 9rem !important;
+}
+
+.client-review-heading {
+    font-weight: 500;
+    color: black;
+}
+
 .client-review-container {
     background-color: #EFF2F1;
+    padding-bottom: 2rem;
 }
 
 .client-review-container {
     width: 100%;
-    background-color: #EFF2F1;
 }
 
 .client-inner-container {
